@@ -1,0 +1,90 @@
+[ 2025-04-17 16:05:03,903 ] 24 root - INFO - Entering intot data scraper..
+[ 2025-04-17 16:05:03,903 ] 103 root - INFO - Start initiate_google_maps_data_pull method .
+[ 2025-04-17 16:05:03,903 ] 42 root - INFO - Entering into GoogleMapsDataPull...
+[ 2025-04-17 16:05:06,828 ] 52 root - INFO - Responsed grerated for white rabbit pokhara ...
+[ 2025-04-17 16:05:06,828 ] 55 root - INFO - Business id collection...
+[ 2025-04-17 16:05:06,829 ] 67 root - INFO - Starting the review pull from rapid api using white rabbit pokhara:0x3995951ef3fe215f:0x316ee9634cc49838
+[ 2025-04-17 16:05:10,307 ] 78 root - INFO - Responsed generated for white rabbit pokhara ...
+[ 2025-04-17 16:05:10,307 ] 81 root - INFO - Data list obtained with 0 datas.
+[ 2025-04-17 16:05:10,309 ] 91 root - INFO - Collected 0.
+[ 2025-04-17 16:05:10,310 ] 7 root - INFO - saving reviews...
+[ 2025-04-17 16:05:10,312 ] 110 root - INFO - Reviews for white rabbit pokhara collected from googlemaps and saved to data\raw\white rabbit pokhara\google_maps.pkl
+[ 2025-04-17 16:05:10,312 ] 27 root - INFO - Review pulled form googlemap sucessfull..
+[ 2025-04-17 16:05:10,312 ] 124 root - INFO - Entering into initiate_tripadviser_data_pull.
+[ 2025-04-17 16:05:10,312 ] 49 root - INFO - Entered inot  TripAdviserDataPull... 
+[ 2025-04-17 16:05:10,313 ] 56 root - INFO - Webdriver option setting sucessfull..
+[ 2025-04-17 16:05:20,352 ] 63 root - INFO - Search box found...
+[ 2025-04-17 16:05:24,132 ] 68 root - INFO - white rabbit pokhara entered into search box.
+[ 2025-04-17 16:05:27,454 ] 75 root - INFO - TripAdviser link obtained sucessfully..
+[ 2025-04-17 16:05:30,214 ] 78 root - INFO - Driver closed...
+[ 2025-04-17 16:05:31,433 ] 102 root - INFO - Review captured in buled json...
+[ 2025-04-17 16:05:31,434 ] 113 root - INFO - All review collected..
+[ 2025-04-17 16:05:31,434 ] 7 root - INFO - saving reviews...
+[ 2025-04-17 16:05:31,435 ] 131 root - INFO - Review pulling from TripAdviserDataPull ended sucessfull..
+[ 2025-04-17 16:05:31,436 ] 31 root - INFO - Review pulled form tripadviser sucessfull..
+[ 2025-04-17 16:05:31,436 ] 34 root - INFO - Data saved in..['data\\raw\\white rabbit pokhara\\google_maps.pkl', 'data\\raw\\white rabbit pokhara\\tripadviser.pkl']
+[ 2025-04-17 16:05:31,436 ] 82 root - INFO - Initiaiting the clean and get db...
+[ 2025-04-17 16:05:31,436 ] 34 root - INFO - Starting get_data method from CleanAndSaveToChromeDBC class.. 
+[ 2025-04-17 16:05:31,436 ] 19 root - INFO - Loading reviews started...
+[ 2025-04-17 16:05:31,439 ] 19 root - INFO - Loading reviews started...
+[ 2025-04-17 16:05:31,455 ] 41 root - INFO - Exisiting get_data
+[ 2025-04-17 16:05:31,456 ] 84 root - INFO - 15 revies obtained..
+[ 2025-04-17 16:05:31,456 ] 50 root - INFO - Entering clean_reviews...
+[ 2025-04-17 16:05:31,457 ] 71 root - INFO - Split into 16 chunks using LangChain splitter.
+[ 2025-04-17 16:05:31,457 ] 86 root - INFO - Cleanned the reviews..
+[ 2025-04-17 16:05:31,460 ] 211 sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+[ 2025-04-17 16:05:31,460 ] 219 sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[ 2025-04-17 16:05:38,798 ] 90 root - INFO - Reviews converted into vectors....
+[ 2025-04-17 16:05:38,827 ] 22 chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-0
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-1
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-2
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-3
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-4
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-5
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-6
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-7
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-8
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-9
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-10
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-11
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-12
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-13
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-14
+[ 2025-04-17 16:05:39,097 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-15
+[ 2025-04-17 16:05:39,098 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-0
+[ 2025-04-17 16:05:39,098 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-1
+[ 2025-04-17 16:05:39,098 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-2
+[ 2025-04-17 16:05:39,098 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-3
+[ 2025-04-17 16:05:39,098 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-4
+[ 2025-04-17 16:05:39,098 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-5
+[ 2025-04-17 16:05:39,099 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-6
+[ 2025-04-17 16:05:39,099 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-7
+[ 2025-04-17 16:05:39,099 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-8
+[ 2025-04-17 16:05:39,099 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-9
+[ 2025-04-17 16:05:39,099 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-10
+[ 2025-04-17 16:05:39,099 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-11
+[ 2025-04-17 16:05:39,100 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-12
+[ 2025-04-17 16:05:39,100 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-13
+[ 2025-04-17 16:05:39,100 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-14
+[ 2025-04-17 16:05:39,100 ] 297 chromadb.segment.impl.metadata.sqlite - WARNING - Insert of existing embedding ID: id-15
+[ 2025-04-17 16:05:39,110 ] 15 root - INFO - Data retriver started..
+[ 2025-04-17 16:05:39,112 ] 211 sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+[ 2025-04-17 16:05:39,112 ] 219 sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[ 2025-04-17 16:05:43,217 ] 22 chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[ 2025-04-17 16:05:43,305 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-0
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-1
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-2
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-3
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-4
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-5
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-6
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-7
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-8
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-9
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-10
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-11
+[ 2025-04-17 16:05:43,306 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-12
+[ 2025-04-17 16:05:43,307 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-13
+[ 2025-04-17 16:05:43,307 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-14
+[ 2025-04-17 16:05:43,307 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-15

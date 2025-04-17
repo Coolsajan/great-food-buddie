@@ -4,6 +4,7 @@ from src.data_scraper.google_reviews import GoogleMapsDataPullConfig
 from src.data_scraper.tripadvisor_reviews import TripAdviserDataPullConfig
 from src.utils.utils import load_reviews
 from sentence_transformers import SentenceTransformer
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from chromadb import PersistentClient
 from chromadb.config import Settings
 import re
@@ -43,23 +44,35 @@ class CleanAndSaveToChromaDBC:
         except Exception as e:
             raise CustomException(e,sys)
 
-    def clean_reviews(self,full_review:list):
-        """This method will clean the raw data scraped from web.."""
+    def clean_reviews(self, full_review: list):
+        """Clean and chunk scraped reviews using LangChain's text splitter."""
         try:
-            logging.info("Entering in to clean data of CleanAndSaveToChromaDBC class...")
-            full_reviews=[]
+            logging.info("Entering clean_reviews...")
+
+            cleaned_reviews = []
             for review in full_review:
-                review = review.lower()                    
-                review = re.sub(r"[^a-zA-Z0-9\s]", "", review) 
-                review = re.sub(r"\s+", " ", review).strip() 
+                review = review.lower()
+                review = re.sub(r"[^a-zA-Z0-9\s]", "", review)
+                review = re.sub(r"\s+", " ", review).strip()
+                cleaned_reviews.append(review)
 
-                full_reviews.append(review)
+            # Use LangChain's RecursiveCharacterTextSplitter
+            splitter = RecursiveCharacterTextSplitter(
+                chunk_size=500,          # max characters per chunk
+                chunk_overlap=50,        # optional overlap
+                separators=["\n\n", "\n", ".", " ", ""],  # split preference
+            )
 
-            logging.info("Exisiting clean data...")              
-            return full_reviews
-        
+            split_docs = splitter.create_documents(cleaned_reviews)
+
+            # Extract text content only
+            chunked_texts = [doc.page_content for doc in split_docs]
+
+            logging.info(f"Split into {len(chunked_texts)} chunks using LangChain splitter.")
+            return chunked_texts
+
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e, sys)
         
     def initiate_clean_chromadb(self,foodPlace : str, filepath : list):
         """

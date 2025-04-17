@@ -1,0 +1,20 @@
+[ 2025-04-17 16:12:05,645 ] 15 root - INFO - Data retriver started..
+[ 2025-04-17 16:12:05,647 ] 211 sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+[ 2025-04-17 16:12:05,648 ] 219 sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[ 2025-04-17 16:12:09,592 ] 22 chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-0
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-1
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-2
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-3
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-4
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-5
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-6
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-7
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-8
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-9
+[ 2025-04-17 16:12:09,824 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-10
+[ 2025-04-17 16:12:09,825 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-11
+[ 2025-04-17 16:12:09,825 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-12
+[ 2025-04-17 16:12:09,825 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-13
+[ 2025-04-17 16:12:09,825 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-14
+[ 2025-04-17 16:12:09,825 ] 339 chromadb.segment.impl.vector.local_persistent_hnsw - WARNING - Add of existing embedding ID: id-15

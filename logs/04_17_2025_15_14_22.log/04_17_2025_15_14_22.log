@@ -1,0 +1,4 @@
+[ 2025-04-17 15:14:28,054 ] 14 root - INFO - Data retriver started..
+[ 2025-04-17 15:14:28,055 ] 211 sentence_transformers.SentenceTransformer - INFO - Use pytorch device_name: cpu
+[ 2025-04-17 15:14:28,055 ] 219 sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+[ 2025-04-17 15:14:34,232 ] 22 chromadb.telemetry.product.posthog - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
